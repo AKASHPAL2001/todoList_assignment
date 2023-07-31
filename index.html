@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="navbar-left">
+      <!-- Add your logo or title here if needed -->
+      <h1>Todo App</h1>
+    </div>
+    <div class="navbar-right">
+      <label for="sort">Sort by</label>
+      <select name="sort" id="sort">
+        <option value="1" selected>Old to New</option>
+        <option value="2">New to Old</option>
+        <option value="3">Priority: Low to High</option>
+        <option value="4">Priority: High to Low</option>
+      </select>
+      <button id="sortBtn" onclick="sortTasks()">Sort</button>
+
+      <div class="filter-container">
+        <label for="priorityFilter">Priority:</label>
+        <select name="priorityFilter" id="priorityFilter">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <br>
+        <label for="fromDate">From:</label>
+        <input type="date" id="fromDate" name="fromDate">
+        <br>
+        <label for="toDate">To:</label>
+        <input type="date" id="toDate" name="toDate">
+      </div>
+      <button id="filterBtn" onclick="filterList()">Filter</button>
+      <button id="resetFilter" onclick="resetFilter()">Reset</button>
+
+      <input type="text" id="searchInput" placeholder="Search">
+      <button id="searchInput" onclick="searchTasks()">Search</button>
+    </div>
+  </nav>
+
+
+
+  <section class="header">
+    <h2>Add a new task to your TodoList</h2>
+
+      <input type="text" id="todotask" name="todotask" placeholder="Task...">
+     <span>
+      <label for="">Due Date:</label>
+      <input type="date" name="duedate" id="duedate">
+     </span> 
+     <span>
+      <label for="">Select Category</label>
+      <select name="category" id="category">
+        <option value="office">Office</option>
+        <option value="personal">Personal</option>
+        <option value="personal">Household</option>
+      </select>
+     </span>
+      <span>
+        <label for="">Select Priority</label>
+        <select name="priority" id="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </span>
+      <span>
+        <input type="text" name="tags" id="tags" placeholder="Add Tags">
+      </span>
+      <span>
+        <input type="text" id="subtask" name="subtask" placeholder="Add subtask">
+        <button id="addsubtask" onclick="addSubtask()">+</button>
+      </span>
+
+      <div><ul id="temp-subtask"></ul></div>
+      <br>
+      <button type="" id="addbtn" onclick="addTask()">Add Task</button>
+
+  </section>
+  <div class="container">
+    
+    <h1>To-Do List</h1>
+    <ul class="list-items" id="todo-list"> </ul>
+  </div>
+
+  
+  <script src="components/app.js"></script>
+</body>
+</html>
