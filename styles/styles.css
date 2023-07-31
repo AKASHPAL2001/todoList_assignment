@@ -99,6 +99,149 @@ body {
     background: transparent;
   }
   
+
+  .input-section button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(17, 89, 65);
+    border-radius: 10px;
+    color: white;
+  }
+  .list-items ul{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .list-items li{
+    margin: 10px auto;
+    width: auto;
+    display: flex;
+    list-style: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    justify-content: space-between;
+  }
+
+  .list-items li input{
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  .list-items li div{
+    display: flex;
+    /* flex: 1; */
+    /* float: right; */
+    margin-right: 0;
+  }
+  .list-items li div button{
+    margin-right: 0;
+    width: 4rem;
+  }
+  .done{
+    text-decoration: line-through;
+  }*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(135deg,#153677,#4e085f);
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  z-index: 2;
+}
+
+.navbar-left h1 {
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-left: 10px;
+}
+
+.navbar-right input[type="text"] {
+  padding: 8px;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+  }
+
+  .navbar-right button:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.filter-container{
+  display: flex;
+}
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+  }
+  .container {
+    background-color: aqua;
+    width: 80%;
+    max-width: 540px;
+    margin: 50px auto 1.9rem;
+    padding: 10px 1.25rem;
+    border-radius: 10px;
+  }
+  .container h1{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  .input-section{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: aquamarine;
+    border-radius: 10px;
+  }
+  .input-section input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+
   .input-section button {
     padding: 15px 20px;
     border: none;

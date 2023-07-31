@@ -60,12 +60,12 @@ sortBtn.onclick = () => {
 //   console.log('Filtering tasks...');
 // }
 
-// function searchTasks() {
-//   const searchInput = document.getElementById('searchInput');
-//   const searchTerm = searchInput.value.trim();
+function searchTasks() {
+  const searchInput = document.getElementById('searchInput');
+  const searchTerm = searchInput.value.trim();
 
-//   console.log(`Searching tasks for: ${searchTerm}`);
-// }
+  console.log(`Searching tasks for: ${searchTerm}`);
+}
 
 
 
